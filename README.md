@@ -1,1 +1,15 @@
 sha256:dacf92d3639ca38f523009a1e286cedf1e851d9943ed808f9db59c4ac39c3193
+
+
+# Step 1: 拉取原始镜像
+docker pull uncleluo/mous:latest
+
+# Step 2: 重命名为 GHCR 格式
+docker tag uncleluo/mous:latest ghcr.io/docker-gb/sap:latest
+
+# Step 3: 登录 GHCR（使用 GitHub PAT）
+echo YOUR_GITHUB_PAT | docker login ghcr.io -u YOUR_GITHUB_USERNAME --password-stdin
+
+# Step 4: 推送到 GHCR
+docker push ghcr.io/docker-gb/sap:latest
+
