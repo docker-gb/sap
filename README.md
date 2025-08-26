@@ -13,3 +13,6 @@ echo YOUR_GITHUB_PAT | docker login ghcr.io -u YOUR_GITHUB_USERNAME --password-s
 # Step 4: 推送到 GHCR
 docker push ghcr.io/docker-gb/sap:latest
 
+# Step 5: 检查是否可以匿名拉取
+docker logout ghcr.io
+docker pull ghcr.io/docker-gb/sap:latest
