@@ -8,7 +8,7 @@ docker pull uncleluo/mous:latest
 docker tag uncleluo/mous:latest ghcr.io/docker-gb/sap:latest
 
 # Step 3: 登录 GHCR（使用 GitHub PAT）
-https://github.com/settings/tokens
+https://github.com/settings/tokens ①write:packages  ②read:packages  ③repo（如果你的仓库是私有的）
 
 echo YOUR_GITHUB_PAT | docker login ghcr.io -u YOUR_GITHUB_USERNAME --password-stdin
 
