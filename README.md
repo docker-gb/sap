@@ -18,3 +18,7 @@ docker push ghcr.io/docker-gb/sap:latest
 # Step 5: 检查是否可以匿名拉取
 docker logout ghcr.io<div>
 docker pull ghcr.io/docker-gb/sap:latest<div>
+
+https://www.youtube.com/watch?v=zuLaPkHmmQA&ab_channel=UncleLUO%E8%80%81%E7%BE%85%E5%8F%94%E5%8F%94%E7%9A%84%E6%95%B8%E5%AD%97%E7%94%9F%E6%B4%BB%E6%8C%87%E5%8D%97
+
+
